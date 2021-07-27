@@ -11,7 +11,10 @@
 > 啟動 window 10 command 視窗
 > d:\ mkdir webpack-project  
 > cd webpack-project
+
 # 3. 建立版本控管 in github
+> git init
+> 
 
 # 4. 建立專案開發環境
 > npm init -y
@@ -21,13 +24,17 @@
 > npm install --save-dev webpack webpack-cli webpack-dev-server
 > 新增 webpack.config.js 設定檔
 
-# 4. 安裝及設定與 webpack5 其他相關套件
+# 4. 安裝 JavaScript 的編譯器 Babel
+### Babel 是一款 JavaScript 的編譯器，事實上 JavaScript 從發行到現在，經過了許多版本的更新，常見的 ES6、ES7 都屬於較新的版本，最為穩定的版本為 ES5，兼容性也是最高的， Babel 的用意就是將較新版本的  JavaScript 編譯成穩定版本，以提高兼容性。
+> npm install --save-dev babel-loader @babel/core @babel/preset-env
+
+# . 安裝及設定與 webpack5 其他相關套件
 > npm install --save-dev cross-env
 > npm install --save-dev style-loader css-loader
 > 編輯 webpack.config.js 設定檔 
   for cross-env and css-loader and style-loader
 
-# 5. 安裝及設定 CSS framework Bootstrap 5
+# . 安裝及設定 CSS framework Bootstrap 5
 > npm install --save bootstrap
 
 # 6. 安裝及設定 Font Icon 
