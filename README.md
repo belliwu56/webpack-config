@@ -53,9 +53,12 @@ webpack-project/
 ``` bash
 # 7. 安裝及設定與 webpack5 其他相關套件
 > npm install --save-dev cross-env
-> npm install --save-dev style-loader css-loader
+> npm install --save-dev css-loader mini-css-extract-plugin
 > 編輯 webpack.config.js 設定檔 
-  for cross-env and css-loader and style-loader
+  for 
+  a. cross-env
+  b. css-loader
+  c. mini-css-extract-plugin
 ``` 
 
 ``` bash
