@@ -3,8 +3,8 @@
   "scripts": {
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "build": "cross-env NODE_ENV=production webpack",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
