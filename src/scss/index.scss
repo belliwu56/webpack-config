@@ -1,0 +1,10 @@
+$primary: #2525b1;
+
+body {
+  background-color: greenyellow;
+  font-size: 20 px;
+}
+
+.text-primary {
+  color: $primary;
+}

@@ -1,4 +1,5 @@
-import "./styles/index.css";
+import "./scss/index.scss";
+// import "./styles/index.css";
 
 const elvenShieldRecipe = {
     leatherStrip: 2,
