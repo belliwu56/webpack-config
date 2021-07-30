@@ -71,7 +71,6 @@ webpack-project/
 ├─── package-lock.json
 └─── package.json         # 已安裝 webpack、webpack-cli
 ``` 
-
 ``` bash
 # 7. 安裝及設定與 webpack5 其他相關套件
 npm install --save-dev cross-env
@@ -91,14 +90,29 @@ for
   b. css-loader
   c. style-loader
   d. mini-css-extract-plugin
-
 ``` 
 ``` bash
 ## B. sass-loader and node-sass
+Sass, Scss 及 Less 是什麽 ?
+> Sass 的縮排語法，對於寫慣 css 前端的 web 開發者來說很不直觀，也不能將 css 代碼加入到 Sass 裏面，因此 sass 語法進行了改良，Sass 3 就變成了 Scss (sassy css)。 與原來的語法
+兼容，只是用{}取代了原來的縮進。
+> Less 也是一種動態樣式語言. 對 CSS 賦予了動態語言的特性，如變量，繼承，運算， 函數. 
+  Less 既可以在客戶端上運行 (支持IE 6+, Webkit, Firefox)，也可在服務端運行(借助 Node).
+
 npm install --save-dev sass-loader node-sass
+``` 
+``` bash
+## C. postcss-loader and autoprefixer (自動提高 瀏覽器版本相容性)
+npm install --save-dev postcss-loader autoprefixer
+``` 
+``` bash
 
 ``` 
 ``` bash
+
+``` 
+``` bash
+
 # 8. 安裝 JavaScript 的編譯器 Babel
 > 由於瀏覽器的支援度卻跟不上 JavaScript 版本的更新，所以新版本的JavaScript在現有的瀏覽器上面支援度很低，目前市面上支援度最高的版本大概就是 ECMAScript 5（ES5）了，為了要讓工程師可以使用新版本的JavaScript 做開發又要瀏覽器可以支援，我們就需要有相對應的工具作轉換，把新版本的 JavaScript 轉換成 ES5 。webpack 本身並沒有提供把新版本的 JavaScript 轉換成 ES5 的功能，所以需要靠神奇的轉換工具Babel~～～～～
 Babel 是一款 JavaScript 的編譯器，事實上 JavaScript 從發行到現在，經過了許多版本的更新，常見的 ES6、ES7 都屬於較新的版本，最為穩定的版本為 ES5，兼容性也是最高的， Babel 的用意就是將較新版本的  JavaScript 編譯成穩定版本，以提高兼容性。
